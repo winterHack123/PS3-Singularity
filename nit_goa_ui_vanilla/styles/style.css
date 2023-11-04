@@ -106,7 +106,7 @@ html {
     border-bottom: 1px solid #fff;
 }
 
-.card:hover {
+.cards-container .card:hover {
     box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
 }
 
@@ -128,3 +128,34 @@ html {
     position: relative;
     margin: auto;
 }
+
+#testimonials {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #007D7D;
+    width: 100%;
+    padding: 20px;
+}
+
+#testimonials .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.5s ease;
+}
+
+#testimonials .card:hover {
+    box-shadow: 0 0 2px inset aqua, 0 0 50px  inset aqua, 0 0 100px inset aqua;
+}
+
+#testimonials img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
