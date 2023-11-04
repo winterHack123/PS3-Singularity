@@ -230,6 +230,45 @@ display: block;
     margin: auto;
 }
 
+#student .card{
+    width: 50%;
+}
+
+.branches {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.branches li {
+    width: 20%;
+}
+
+.branches .dropbtn {
+    width: 4rem;
+}
+
+#feedback input {
+    width: 100%;
+    align-items: left;
+}
+
+#feedback label {
+    position: relative;
+    top: -10px;
+}
+
+#feedback input[type="text"] {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+
 #testimonial-head {
     color: #ddd;
     text-align: center;
