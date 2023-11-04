@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.accessBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+    padding: 10px 15px;
+    list-style: none;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(0, 94, 110);
+
+}
+
+.headerBar {
+    position: fixed;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 10px 0;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.logo-container {
+    display: flex;
+    top: -10px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+
+#logo_img {
+    width: 10rem;
+    transition: 0.3s;
+}
+
+#header {
+    transition: 0.3s;
+    text-align: center;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    margin: auto;
+    font-size: 0.8rem;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.big_text {
+    font-size: 20rem;
+}
