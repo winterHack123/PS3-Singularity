@@ -20,7 +20,26 @@ html {
     flex-direction: row-reverse;
     background-color: #333399;
     color: #fff;
+}
 
+.accessBar a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.accessBar a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.accessBar a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.accessBar a:active {
+    color: #fff;
+    text-decoration: none;
 }
 
 .headerBar {
@@ -51,6 +70,7 @@ html {
 }
 
 #header {
+    font-size: 40px;
     transition: 0.3s;
     text-align: center;
 }
@@ -200,8 +220,8 @@ display: block;
 }
 
 #testimonials img {
-    width: 180px;
-    height: 180px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
 }
 
@@ -238,11 +258,46 @@ display: block;
     flex-direction: row;
     gap: 1rem;
     padding: 10px;
-    height: 200px;
+    height: 500px;
     background-color: #333399;
+    color: #fff;
+}
+
+#quick-links {
+    width: 50%;
+}
+
+.quick-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+}
+
+.one, .two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    list-style: none;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    list-style: none;
 }
 
 .footerCard {
+    display: flex;
+    flex-direction: column;
     padding: 5px;
     width: 24%;
+}
+
+.footerCard h2 {
+    border-bottom: 5px solid #fff;
+    padding: 10px;
 }
