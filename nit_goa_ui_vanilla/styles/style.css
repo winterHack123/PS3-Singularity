@@ -135,6 +135,51 @@ display: block;
     color: #fff;
 }
 
+.spacer {
+    position: relative;
+    width: 100%;
+    height: 17.5rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background-image: url('../src/hero_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.typewriter {
+    position: relative;
+    margin: auto;
+    height: 500px;
+}
+
+.typewriter h1 {
+    overflow: hidden; 
+    text-align: center;
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -143,7 +188,6 @@ display: block;
     gap: 2rem;
     flex: 1 1 1;
     width: 100%;
-
 }
 
 .card {
