@@ -151,34 +151,13 @@ display: block;
     background-attachment: fixed;
 }
 
-.typewriter {
+#type {
     position: relative;
-    margin: auto;
-    height: 500px;
-}
-
-.typewriter h1 {
-    overflow: hidden; 
+    top: 50px;
+    font-size: 4rem;
+    color: #fff;
     text-align: center;
-    border-right: .15em solid orange;
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em;
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 50% }
-  }
-  
-
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+}
 
 .cards-container {
     display: flex;
