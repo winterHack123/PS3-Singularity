@@ -21,3 +21,13 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+function darkTheme() {
+  var theme = document.getElementsByTagName('link')[0];
+  theme.setAttribute('href', 'styles/style_dark.css');
+}
+
+function lightTheme() {
+  var theme = document.getElementsByTagName('link')[0];
+  theme.setAttribute('href', 'styles/style.css');
+}
