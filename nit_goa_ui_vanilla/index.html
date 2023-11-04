@@ -13,6 +13,7 @@
             <li>A+</li>
             <li>A-</li>
             <li>A</li>
+
         </ul>
         <div class="headerBar">
             <div class="logo-container">
@@ -36,7 +37,7 @@
 
         <marquee>FFFFFFF</marquee>
 
-        <h1 class="big_text">FHAASAJK</h1>
+        <h1 class="big_text">FHAAK</h1>
 
         <marquee class="announce">The announcement will be made here</marquee>
 
@@ -48,13 +49,13 @@
                 <h4>
                     NIRF Rank
                 </h4>
-                <h1>
+                <h1 class="big-head">
                     90
                 </h1>
                 <h4>
                     Overall Ranking
                 </h4>
-                <h1>
+                <h1 class="big-head">
                     88
                 </h1>
             </div>
@@ -78,7 +79,92 @@
             </div>
         </div>
 
+        <div class="cards-container">
+            <div class="card">
+                <h2 class="card-header">
+                    Upcoming Events
+                </h2>
+                <span>
+                    Winter Hackathon on December 4th!!
+                </span>
+                <span>
+                    Cricket Tournament from December onwards
+                </span>
+                <span>
+                    End Sems starts from 28th December
+                </span>
+            </div>
+            <div class="card">
+                <h2 class="card-header">
+                    Club Announcements
+                </h2>
+                <span>Timetable for B.Tech, M.Tech and P.Hd.</span>
+                <span>Advertisement for the post of medical officer on temporary basis</span>
+                <span>Five Day Workshop on Deep Learning</span>
+            </div>
+            <div class="card">
+                <h2 class="card-header">
+                    Quick Links
+                </h2>
+                <span>A Biannual Newsletter</span>
+                <span>9th Convocation</span>
+                <span>First Year Master TimeTable</span>
+                <span>Office Order: Duty hours for non-teaching Staff</span>
+                <span>Amogus</span>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <h2 class="card-header">
+                    NIT Goa Tweets
+                </h2>
+                <span>
+                    Check more here 
+                </span>
+            </div>
+
+            <div id="bar-chart" class="card">
+                <h2 class="card-header">
+                    Placement Statistics
+                </h2>
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            </div>
+        </div>
+
     </main>
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script>
+        var xValues = ["Engineering", "Education", "Research", "IT", "Business Dev","Operations","Others"];
+        var yValues = [44, 12, 9, 7, 5, 4, 19];
+        var barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797",
+          "#e8c3b9",
+          "#1e7145",
+          "#007D7D"
+        ];
+        
+        new Chart("myChart", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: true,
+              text: "Graphical Representation of NIT Goa Placements Sector-Wise (2023) in %"
+            }
+          }
+        });
+        </script>
 </html>
