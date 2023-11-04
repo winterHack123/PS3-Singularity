@@ -18,20 +18,22 @@ html {
     gap: 2rem;
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgb(0, 94, 110);
+    background-color: #333399;
+    color: #fff;
 
 }
 
 .headerBar {
     position: fixed;
     z-index: 4;
+    color: #fff;
     width: 100%;
     gap: 0.5rem;
     padding: 10px 0;
     top: 40px;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: #3366CC;
 }
 
 .logo-container {
@@ -41,7 +43,6 @@ html {
     position: relative;
     width: 100%;
     align-items: center;
-    box-shadow: 0 0 10px black;
 }
 
 #logo_img {
@@ -74,7 +75,8 @@ html {
 
 .announce {
     padding: 10px;
-    background-color: #007D7D;
+    background-color: #333399;
+    color: #fff;
 }
 
 .cards-container {
@@ -97,7 +99,7 @@ html {
 }
 
 .card-header {
-    border-bottom: 5px solid #007D7D;
+    border-bottom: 5px solid #333399;
 }
 
 .card span {
@@ -117,7 +119,7 @@ html {
 
 .big-head {
     font-size: 4rem;
-    color: aqua;
+    color: #3366CC;
 }
 
 #bar-chart {
@@ -140,7 +142,7 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #007D7D;
+    background-color: #3366CC;
     width: 100%;
     padding: 20px;
 }
@@ -155,7 +157,7 @@ html {
 }
 
 #testimonials .card:hover {
-    box-shadow: 0 0 2px inset aqua, 0 0 50px  inset aqua, 0 0 100px inset aqua;
+    box-shadow: 0 0 20px rgba(255,255,255,0.4), 0 0 50px rgba(255,255,255,0.4);
 }
 
 #testimonials img {
@@ -164,4 +166,6 @@ html {
     border-radius: 50%;
 }
 
-
+.big-links-wrapper {
+    position: relative;
+}
