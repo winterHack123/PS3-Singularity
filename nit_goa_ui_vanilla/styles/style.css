@@ -129,6 +129,11 @@ html {
     margin: auto;
 }
 
+#testimonial-head {
+    text-align: center;
+    font-size: 5rem;
+}
+
 #testimonials {
     position: relative;
     display: flex;
@@ -158,4 +163,5 @@ html {
     height: 180px;
     border-radius: 50%;
 }
+
 
