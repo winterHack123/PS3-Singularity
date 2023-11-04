@@ -69,6 +69,42 @@ html {
     gap: 1.5rem;
 }
 
+.dropbtn {
+    border: 0;
+    padding: 5px;
+    background-color: #3366CC;
+    color: #fff;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #333399;}
+
+
 .big_text {
     font-size: 20rem;
 }
@@ -150,6 +186,8 @@ html {
 #testimonials .card {
     display: flex;
     flex-direction: column;
+    position: relative;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 1rem;
