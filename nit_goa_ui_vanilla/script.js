@@ -9,3 +9,15 @@ function scrollFunction() {
     document.getElementById("logo_img").style.width= "10rem";
   }
 }
+
+var i = 0;
+var txt = 'Education is not the Learning of the Facts But the mind to Think';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("type").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
