@@ -24,6 +24,7 @@ html {
 
 .headerBar {
     position: fixed;
+    z-index: 4;
     width: 100%;
     gap: 0.5rem;
     padding: 10px 0;
@@ -89,7 +90,10 @@ html {
 
 .card {
     position: relative;
+    padding: 15px;
     width: 30%;   
+    border-radius: 10px;
+    transition: 0.2s ease;
 }
 
 .card-header {
@@ -99,10 +103,28 @@ html {
 .card span {
     display: block;
     padding: 5px;
+    border-bottom: 1px solid #fff;
+}
 
+.card:hover {
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
 }
 
 .card span:hover {
     background-color: #e7e7e7;
     border-bottom: 1px solid gray;
+}
+
+.big-head {
+    font-size: 4rem;
+    color: aqua;
+}
+
+#bar-chart {
+    width: 62%;
+}
+
+#myChart {
+    position: relative;
+    margin: auto;
 }
