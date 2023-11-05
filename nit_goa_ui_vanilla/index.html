@@ -15,17 +15,22 @@
             <li>Home</li>
             <li onclick="lightTheme()">Light</li>
             <li onclick="darkTheme()">Dark</li>
-            <li>A+</li>
+            <li>
+               A+
+            </li>
             <li>A</li>
-            <li>A-</li>
+            <li id="btn-decrease">A-</li>
 
         </ul>
         <div class="headerBar">
             <div class="logo-container">
                 <img src="src/nit-goa-logo.png" class="logo" id="logo_img">
                 <h1 id="header">National Institute of Technology, Goa</h1>
+                <button class="nav" onclick="toggleMenu()">
+                    <img id="nav" src="src/nav.png" width="40">
+                </button>
             </div>
-            <ul class="navbar">
+            <ul id="navbar">
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn">Home</button>
@@ -139,8 +144,8 @@
 
         </div>
 
-        <div class="hero" onclick="typeWriter()">
-            <div id="type"></div>
+        <div class="hero">
+            <div id="type">Education is not the learning of facts... but the training of the mind to think</div>
         </div>
 
         <marquee class="announce">The announcement will be made here</marquee>
