@@ -10,24 +10,28 @@ function scrollFunction() {
   }
 }
 
-var i = 0;
-var txt = 'Education is not the Learning of the Facts But the mind to Think';
-var speed = 50;
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("type").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
 
 function darkTheme() {
   var theme = document.getElementsByTagName('link')[0];
   theme.setAttribute('href', 'styles/style_dark.css');
+  var nav = document.getElementById('nav');
+  nav.setAttribute('src', 'src/nav-white.png');
 }
 
 function lightTheme() {
   var theme = document.getElementsByTagName('link')[0];
   theme.setAttribute('href', 'styles/style.css');
+  var nav = document.getElementById('nav');
+  nav.setAttribute('src', 'src/nav.png');
+}
+
+function toggleMenu() {
+  var menu = document.getElementById('navbar');
+  if(menu.style.left == '-100%') {
+    menu.style.left = 0;
+  }
+  else{
+    menu.style.left = '-100%';
+  }
 }
